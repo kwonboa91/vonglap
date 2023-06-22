@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function play() {
+            let count = 0;
+            let turn = 0;
+            let numberX = Math.floor(Math.random() * 10)
+            let maxNumber;
+            do {
+                maxNumber = prompt("nhap so lon nhat")
+                count++;
+                turn++;
+                if (maxNumber == numberX) {
+                    alert("Doan dung sau " + count + " luot");
+                    break;
+                }
+                if (turn >= 3){
+                    alert("Loss");
+                    break;
+                }
+            }while (maxNumber != numberX);
+        }
+        play();
+    </script>
+</body>
+
+</html>

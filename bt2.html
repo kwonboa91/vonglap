@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fibo(){
+            let n = prompt("nhap so N")
+            let a = 1;
+            let b = 1;
+            let d= a + b;
+            let str = "1,1";
+            let sum = d;
+
+            let c = 2;
+            while(true){
+                if(d > n)
+                break;
+                str += ',' + d;
+                sum += d;
+                a = b;
+                b = d;
+                d = a + b;
+                c++;
+            }
+            document.write(str);
+            document.write("<br>")
+            document.write(sum)
+        }
+        fibo();
+    </script>
+</body>
+</html>

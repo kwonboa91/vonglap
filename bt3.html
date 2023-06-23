@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function daoSo() {
+            let n = prompt("nhap so");
+            let newNumber = 0;
+            let a;
+            while (n >= 1) {
+                a = n % 10;
+                newNumber = newNumber * 10 + a;
+                n = Math.floor(n / 10) ;
+            }
+            alert(newNumber);
+
+        }
+        daoSo()
+
+    </script>
+</body>
+
+</html>

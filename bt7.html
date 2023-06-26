@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function checkPrime(n) {
+
+
+            let flag = true;
+            if (n < 2)
+                flag = false;
+            let i = 2;
+            while (i < n) {
+                if (n % i == 0) {
+                    flag = false;
+                }
+                i++;
+            }
+            return flag;
+        }
+
+        function listPrime() {
+            let numbers = 20
+            let count = 0;
+            let n = 2;
+            while (count < numbers) {
+                if (checkPrime(n)) {
+                    document.write(n + ".");
+                    count++;
+                }
+                n++;
+            }
+        }
+        listPrime();
+    </script>
+</body>
+
+</html>
